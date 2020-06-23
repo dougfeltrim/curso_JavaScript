@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body { 
+            font: normal 28pt Arial;
+        }
+    </style>
 </head>
 <body>
     <script>
         var nome = window.prompt('Qual é seu nome?')
-        document.write(`Seu nome tem ${nome.length} letras.`)
+        var idade = window.prompt('Qual é sua idade?')
+        var verificacao = window.prompt('Qual quanto é  4 + 4?')
+
+
+        document.write(`Olá, <strong>${nome}</strong>, seu nome  tem ${nome.length} letras. <br>`)
+        document.write(`Você tem, <strong>${idade}</strong> anos. <br>`)
+        document.write(`Resposta da verificação, <strong>${verificacao}</strong>. <br>`)
+        
+
+        // document.write(`Seu nome em letras maiúsculas eh: ${nome.toUpperCase()} <br>`)
+        // document.write(`Seu nome em letras minúsculas eh: ${nome.toLowerCase()} <br>`)
+
     </script>
 </body>
 </html>
